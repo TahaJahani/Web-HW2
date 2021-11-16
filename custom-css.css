@@ -52,3 +52,12 @@
     border: var(--color-gold) solid 3px;
     color: var(--color-gold);
 }
+
+.row:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.gallery {
+    background-color: beige;
+    padding: 24px;
+}
