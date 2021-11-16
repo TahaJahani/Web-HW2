@@ -1,3 +1,9 @@
+:root {
+    --color-pink: rgba(252,105,134,1);
+    --color-gold: #FBCC30;
+    --color-blue: rgba(102,127,254,1);
+}
+
 .navbar-brand-image {
     position: relative;
     vertical-align: middle;
@@ -7,4 +13,42 @@
 
 .navbar-brand {
     height: 50px;
+}
+
+.wave-shape {
+    clip-path: path(
+        "M-0.1,0.7l0,376.4c0,0,27.1-14.9,134.1,9.8c0,0,111.6,27,230.2,4.2c0,0,124.9-19.5,135.2-11.2l0.2-379.5"
+    );
+}
+
+.bg-pink {
+    background-color: var(--color-pink);
+    color: white;
+}
+
+.bg-navy-blue {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.ul-bullets {
+    border-radius: 50%;
+    width: 20px;
+    height: 0;
+    padding-top: 2px;
+    padding-bottom: 18px;
+    text-align: center;
+    background-color: var(--color-gold);
+    color: white;
+}
+
+.bg-gold {
+    background-color: var(--color-gold);
+    color: white;
+}
+
+.border-gold {
+    background-color: white;
+    border: var(--color-gold) solid 3px;
+    color: var(--color-gold);
 }
