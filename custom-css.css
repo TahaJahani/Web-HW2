@@ -49,6 +49,27 @@
     z-index: -1;
 }
 
+.header-top-header {
+    color: black;
+    display: block;
+}
+
+.header-bottom-header {
+    color: black;
+    display: block;
+}
+
+.header-button {
+    border-radius: 999em;
+    background-color: orange;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
 .navbar-brand-image {
     position: relative;
     vertical-align: middle;
