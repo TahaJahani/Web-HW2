@@ -102,12 +102,21 @@
 }
 
 .important-badge {
-    width: 20%;
-    transform: rotate(90deg);
+    width: 20% !important;
+    transform: rotate(90deg) !important;
 }
 
 .navbar-brand {
     height: 50px;
+}
+
+.hoverable-card {
+    transition: all 0.2s !important;
+    cursor: pointer !important;
+}
+
+.hoverable-card:hover {
+    transform: scale(1.15);
 }
 
 .wave-shape {
