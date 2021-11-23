@@ -165,3 +165,22 @@
     background-color: beige;
     padding: 24px;
 }
+
+.stack-image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.stack-image:hover {
+    z-index: 1;
+}
+
+.stack-2-left {
+    top: -200px;
+    left: 50px;
+}
+
+.stack-2-right {
+    top: -200px;
+    right: 50px;
+}
