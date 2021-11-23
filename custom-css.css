@@ -70,11 +70,40 @@
     font-size: 1.5rem;
 }
 
+.a-bit-larger {
+    font-size: 1.25rem;
+}
+
+.center-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
 .navbar-brand-image {
     position: relative;
     vertical-align: middle;
     width: 100px;
     height: auto
+}
+
+.adjust-padding {
+    padding: 0.5rem !important;
+}
+
+.a-little-left-margin {
+    margin-left: 0.25rem !important;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.important-badge {
+    width: 20%;
+    transform: rotate(90deg);
 }
 
 .navbar-brand {
