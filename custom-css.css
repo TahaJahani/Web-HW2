@@ -161,6 +161,15 @@
     margin-bottom: 24px;
 }
 
+.on-hover-darker {
+    color: rgb(131, 127, 127) !important;
+    transition: all 0.2s !important;
+}
+
+.on-hover-darker:hover {
+    color: black !important;
+}
+
 .gallery {
     background-color: lightgray;
     padding: 24px;
