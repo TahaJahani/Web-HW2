@@ -1,195 +1,224 @@
 @font-face {
-    font-family: BNazanin;
-    src: url(files/BNazanin.tff);
+  font-family: BNazanin;
+  src: url(files/BNazanin.tff);
 }
 
 * {
-    font-family: BNazanin;
+  font-family: BNazanin;
 }
 
 :root {
-    --color-pink: rgba(252,105,134,1);
-    --color-gold: #FBCC30;
-    --color-blue: rgba(102,127,254,1);
+  --color-pink: rgba(252, 105, 134, 1);
+  --color-gold: #fbcc30;
+  --color-blue: rgba(102, 127, 254, 1);
 }
 
 .white-text {
-    color: #fff !important;
+  color: #fff !important;
 }
 
-
 .curve {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
 }
 
 .curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: hsl(216, 21%, 16%);
 }
 
 .curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #3c31dd;
+  transform: translate(-4%, 40%);
+  z-index: -1;
 }
 
 .header-top-header {
-    color: black;
-    display: block;
+  color: black;
+  display: block;
 }
 
 .header-bottom-header {
-    color: black;
-    display: block;
+  color: black;
+  display: block;
 }
 
 .header-button {
-    border-radius: 999em;
-    background-color: orange;
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    font-size: 1.5rem;
+  border-radius: 999em;
+  background-color: orange;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .a-bit-larger {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .center-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 .navbar-brand-image {
-    position: relative;
-    vertical-align: middle;
-    width: 100px;
-    height: auto
+  position: relative;
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
 }
 
 .adjust-padding {
-    padding: 0.5rem !important;
+  padding: 0.5rem !important;
 }
 
 .a-little-left-margin {
-    margin-left: 0.25rem !important;
+  margin-left: 0.25rem !important;
 }
 
 .full-width {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .important-badge {
-    width: 20% !important;
-    transform: rotate(90deg) !important;
+  width: 20% !important;
+  transform: rotate(90deg) !important;
 }
 
 .navbar-brand {
-    height: 50px;
+  height: 50px;
 }
 
 .hoverable-card {
-    transition: all 0.2s !important;
-    cursor: pointer !important;
+  transition: all 0.2s !important;
+  cursor: pointer !important;
 }
 
 .hoverable-card:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .wave-shape {
-    clip-path: path(
-        "M-0.1,0.7l0,376.4c0,0,27.1-14.9,134.1,9.8c0,0,111.6,27,230.2,4.2c0,0,124.9-19.5,135.2-11.2l0.2-379.5"
-    );
+  clip-path: path(
+    "M-0.1,0.7l0,376.4c0,0,27.1-14.9,134.1,9.8c0,0,111.6,27,230.2,4.2c0,0,124.9-19.5,135.2-11.2l0.2-379.5"
+  );
 }
 
 .bg-pink {
-    background-color: var(--color-pink);
-    color: white;
+  background-color: var(--color-pink);
+  color: white;
 }
 
 .bg-navy-blue {
-    background-color: var(--color-blue);
-    color: white;
+  background-color: var(--color-blue);
+  color: white;
 }
 
 .ul-bullets {
-    border-radius: 50%;
-    width: 20px;
-    height: 0;
-    padding-top: 2px;
-    padding-bottom: 18px;
-    text-align: center;
-    background-color: var(--color-gold);
-    color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 0;
+  padding-top: 2px;
+  padding-bottom: 18px;
+  text-align: center;
+  background-color: var(--color-gold);
+  color: white;
 }
 
 .bg-gold {
-    background-color: var(--color-gold);
-    color: white;
+  background-color: var(--color-gold);
+  color: white;
 }
 
 .border-gold {
-    background-color: white;
-    border: var(--color-gold) solid 3px;
-    color: var(--color-gold);
+  background-color: white;
+  border: var(--color-gold) solid 3px;
+  color: var(--color-gold);
 }
 
 .row:not(:last-child) {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .on-hover-darker {
-    color: rgb(131, 127, 127) !important;
-    transition: all 0.2s !important;
+  color: rgb(131, 127, 127) !important;
+  transition: all 0.2s !important;
+}
+
+.gallery-image {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.hoverable-pic {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0 !important;
+}
+
+.hoverable-pic .content {
+  opacity: 0.4;
+  background: black;
+  bottom: -100%;
+  color: #fff;
+  height: 100%;
+  left: 0%;
+  text-align: center;
+  position: absolute;
+  transition: bottom 0.5s ease;
+  width: 100%;
+}
+.hoverable-pic:hover .content {
+  bottom: 0%;
 }
 
 .on-hover-darker:hover {
-    color: black !important;
+  color: black !important;
 }
 
 .gallery {
-    background-color: lightgray;
-    padding: 24px;
+  background-color: lightgray;
+  padding: 24px;
 }
 
 .stack-image {
-    position: relative;
-    width: 250px;
-    height: 250px;
+  position: relative;
+  width: 250px;
+  height: 250px;
 }
 .stack-image:hover {
-    z-index: 1;
+  z-index: 1;
 }
 
 .stack-2-left {
-    top: -200px;
-    left: 50px;
+  top: -200px;
+  left: 50px;
 }
 
 .stack-2-right {
-    top: -200px;
-    right: 50px;
+  top: -200px;
+  right: 50px;
 }
