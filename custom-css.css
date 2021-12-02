@@ -37,6 +37,36 @@ body.dark-mode {
   cursor: pointer;
 }
 
+.padding-holder {
+  padding: 0.5rem !important;
+}
+
+.image-comment-container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-comment-container > img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image-comment-container > span {
+  position: absolute;
+  bottom: 30px;
+  left: -20px;
+  padding: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: white;
+  background-color: orange;
+  transform: scale(0.8);
+}
+
 .curve {
   position: absolute;
   height: 250px;
@@ -118,6 +148,13 @@ body.dark-mode {
 
 .full-width {
   width: 100% !important;
+}
+
+.my-card-body {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-right: 2rem !important;
+  padding-left: 1rem !important;
 }
 
 .important-badge {
