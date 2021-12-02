@@ -514,7 +514,7 @@
           <input type="email" id="typeEmail" class="form-control newsletter-input" placeholder="ایمیل"/>
         </div>
         <div class="form-outline form-white col mx-4">
-          <input type="submit" id="typeSubmit" class="btn" style="width: 100%; background-color: orange; color: black;" value="ثبت" />
+          <input type="button" id="typeSubmit" class="btn" style="width: 100%; background-color: orange; color: black;" value="ثبت" data-mdb-toggle="modal" data-mdb-target="#submitNewsletterModal"/>
         </div>
       </form>
     </div>
@@ -535,10 +535,32 @@
     <!-- Copyright -->
   </footer>
   <!-- End Of Footer -->
+
+  <div
+  class="modal fade"
+  id="submitNewsletterModal"
+  tabindex="-1"
+  aria-labelledby="submitNewsletterModalLabel"
+  aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="submitNewsletterModalLabel">ثبت‌نام در خبرنامه</h5>
+        </div>
+        <div class="modal-body">آیا از ثبت‌نام در خبرنامه‌ی وب‌سایت، اطمینان دارید؟</div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-mdb-dismiss="modal" style="font-size: 1rem;">
+            خیر
+          </button>
+          <button type="button" class="btn" data-mdb-dismiss="modal" style="background-color: orange; font-size: 1rem;">بله</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
 </body>
 
 </html>
