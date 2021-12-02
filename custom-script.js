@@ -4,16 +4,16 @@ function toggleDarkMode() {
 }
 
 function toggleCoverCardInGallery(coverCardID) {
-    let element = document.getElementById(coverCardID);
-    element.classList.toggle("clickable-pic-hover");
+  let element = document.getElementById(coverCardID);
+  element.classList.toggle("clickable-pic-hover");
 }
 
 function randomGradient() {
-    let gradient = document.querySelector("#mask");
+  let gradient = document.querySelector("#mask");
 
-    let randomColor1 = 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + 1 + ')';
-    let randomColor2 = 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + 0.7 + ')';
-    gradient.style.background = "linear-gradient(90deg, " + randomColor1 + " 0%, " + randomColor2 + " 100%)";
+  let randomColor1 = 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + 1 + ')';
+  let randomColor2 = 'rgba(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + 0.7 + ')';
+  gradient.style.background = "linear-gradient(90deg, " + randomColor1 + " 0%, " + randomColor2 + " 100%)";
 }
 
 function showToast() {
@@ -24,15 +24,17 @@ function showToast() {
   x.className = "show";
 
   // After 3 seconds, remove the show class from DIV
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 
 function contactUsMouseMethod(e) {
-  let whiteTexts = document.getElementsByClassName("text-contact-normal");
-  let yellowText = document.getElementsByClassName("text-contact-yellow")[0];
-  let margin = e.type == "mouseover" ? "10px" : "0px";
-  let fontSize = e.type == "mouseover" ? "30px" : "24px";
-  whiteTexts[0].style.transform = `translateY(-${margin})`;
-  whiteTexts[1].style.transform = `translateY(${margin})`;
-  yellowText.style.fontSize = fontSize;
+  if (screen.width >= 600) {
+    let whiteTexts = document.getElementsByClassName("text-contact-normal");
+    let yellowText = document.getElementsByClassName("text-contact-yellow")[0];
+    let margin = e.type == "mouseover" ? "10px" : "0px";
+    let fontSize = e.type == "mouseover" ? "56px" : "50px";
+    whiteTexts[0].style.transform = `translateY(-${margin})`;
+    whiteTexts[1].style.transform = `translateY(${margin})`;
+    yellowText.style.fontSize = fontSize;
+  }
 }

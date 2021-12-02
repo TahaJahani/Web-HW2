@@ -454,6 +454,10 @@ body.dark-mode {
     width: 100%;
     margin-top: 0;
   }
+
+  .contact-us {
+    clip-path: polygon(100% 80%,50% 100%,0 80%,0 0,50% 13.67%,100% 0);
+  }
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
@@ -509,18 +513,35 @@ body.dark-mode {
 
 .contact-us {
   background-color: rgb(39, 39, 39);
-  min-height: 200px;
+  min-height: 700px;
   width: 100%;
+  padding: 50px;
 }
 
 .text-contact-normal {
-  font-size: 28px;
+  cursor: default;
+  font-size: 50px;
   color: white;
   transition: all 0.2s;
 }
 
 .text-contact-yellow {
-  font-size: 28px;
+  cursor: default;
+  font-size: 50px;
   color: var(--color-gold);
   transition: all 0.2s;
+}
+
+.contact-us-logo {
+  width: 5vw;
+  height: 5vw;
+  filter: invert(100%) sepia(0%) saturate(7437%) hue-rotate(42deg) brightness(93%) contrast(118%);
+  transform: scaleX(1) scaleY(1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.contact-us-logo:hover {
+  filter: invert(92%) sepia(57%) saturate(4396%) hue-rotate(324deg) brightness(95%) contrast(107%);
+  transform: scale(1.1);
 }
