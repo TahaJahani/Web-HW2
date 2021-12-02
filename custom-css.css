@@ -332,3 +332,13 @@ body.dark-mode {
   top: -200px;
   right: 50px;
 }
+
+.size-flex {
+  flex-direction: column !important;
+}
+
+@media (min-width: 600px) {
+  .size-flex {
+    flex-direction: row !important;
+  }
+}
