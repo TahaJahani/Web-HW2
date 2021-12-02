@@ -15,6 +15,7 @@
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
   <link rel="stylesheet" href="./custom-css.css" />
+  <script src="custom-script.js" async defer></script>
 </head>
 
 <body dir="rtl">
@@ -24,8 +25,8 @@
     <div class="container-fluid">
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleDarkMode()">
+        <i class="fas fa-bars" onclick="toggleDarkMode()"></i>
       </button>
 
       <!-- Collapsible wrapper -->
@@ -35,7 +36,7 @@
           <img class="navbar-brand-image" src="files/blue_logo_200x200.png" alt="" loading="lazy" />
         </a>
         <!-- Left links -->
-        <div class="form-check form-switch">
+        <div class="form-check form-switch" onclick="toggleDarkMode()">
           <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
           <label class="form-check-label white-text" for="flexSwitchCheckDefault">حالت تاریک</label>
         </div>
