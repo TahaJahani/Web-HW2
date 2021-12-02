@@ -352,7 +352,24 @@ body.dark-mode {
   flex-direction: column !important;
 }
 
+.gallery-small {
+  margin-bottom: 3rem;
+  display: block;
+}
+
+.gallery-big {
+  display: none;
+}
+
 @media (min-width: 600px) {
+  .gallery-small {
+    display: none;
+  }
+  
+  .gallery-big {
+    display: block;
+  }
+
   .size-flex {
     flex-direction: row !important;
   }
