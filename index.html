@@ -20,6 +20,7 @@
 
 <body dir="rtl">
   <!-- Navbar -->
+  <a class="btn btn-info" onclick="toastr.info('Hi! I am info message.');">Info message</a>
   <nav dir="ltr" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <!-- Container wrapper -->
     <div class="container-fluid">
@@ -734,7 +735,6 @@
 
     <!-- End Of Comments-->
   </div>
-
   <!-- News-->
   <div id="newsletteranchor" dir="ltr" class="row d-flex justify-content-center" style="position: relative; top: 100px; ">
     <div style="width: 60%; border-radius: 4px;" class="bg-navy-blue p-4">
@@ -773,8 +773,8 @@
     <!-- Copyright -->
   </footer>
   <!-- End Of Footer -->
-
   <!--Modal-->
+  <div id="toast"><i class="fas fa-check"></i>   عملیات موفقیت آمیز بود</div>
   <div
   class="modal fade"
   id="submitNewsletterModal"
@@ -792,7 +792,7 @@
           <button type="button" class="btn" data-mdb-dismiss="modal" style="font-size: 1rem;">
             خیر
           </button>
-          <button type="button" class="btn" data-mdb-dismiss="modal" style="background-color: orange; font-size: 1rem;">بله</button>
+          <button type="button" class="btn" data-mdb-dismiss="modal" style="background-color: orange; font-size: 1rem;" onclick="showToast()">بله</button>
         </div>
       </div>
     </div>
