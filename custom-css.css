@@ -250,6 +250,10 @@ body.dark-mode {
     text-align: right;
 }
 
+.form-outline {
+  margin-bottom: 12px !important;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: grey;
     opacity: 1; /* Firefox */
@@ -333,12 +337,36 @@ body.dark-mode {
   right: 50px;
 }
 
+.submit-newsletter-button {
+  width: 50%;
+  margin-top: 0.5rem;
+  background-color: orange;
+  color: black;
+}
+
 .size-flex {
+  flex-direction: column !important;
+}
+
+.newsletter-flex {
   flex-direction: column !important;
 }
 
 @media (min-width: 600px) {
   .size-flex {
     flex-direction: row !important;
+  }
+
+  .newsletter-flex {
+    flex-direction: row-reverse !important;
+  }
+
+  .form-outline {
+    margin-bottom: 0px !important;
+  }
+
+  .submit-newsletter-button {
+    width: 100%;
+    margin-top: 0;
   }
 }
