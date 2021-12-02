@@ -350,6 +350,7 @@ body.dark-mode {
 }
 
 .stack-image {
+  display: none;
   position: relative;
   width: 250px;
   height: 250px;
@@ -392,7 +393,43 @@ body.dark-mode {
   display: none;
 }
 
+.ten-percent-padding-left-in-big {
+  padding-left: 0 !important;
+}
+
+.five-percent-padding-right-in-big {
+  padding-right: 0 !important;
+}
+
+.only-for-big {
+  display: none;
+}
+
+.only-for-small {
+  display: block;
+}
+
 @media (min-width: 600px) {
+  .only-for-big {
+    display: block;
+  }
+
+  .only-for-small {
+    display: none;
+  }
+
+  .ten-percent-padding-left-in-big {
+    padding-left: 10% !important;
+  }
+
+  .five-percent-padding-right-in-big {
+    padding-right: 5% !important;
+  }
+
+  .stack-image {
+    display: block;
+  }
+
   .gallery-small {
     display: none;
   }
