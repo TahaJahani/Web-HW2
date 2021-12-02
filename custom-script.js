@@ -26,3 +26,13 @@ function showToast() {
   // After 3 seconds, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+
+function contactUsMouseMethod(e) {
+  let whiteTexts = document.getElementsByClassName("text-contact-normal");
+  let yellowText = document.getElementsByClassName("text-contact-yellow")[0];
+  let margin = e.type == "mouseover" ? "10px" : "0px";
+  let fontSize = e.type == "mouseover" ? "30px" : "24px";
+  whiteTexts[0].style.transform = `translateY(-${margin})`;
+  whiteTexts[1].style.transform = `translateY(${margin})`;
+  yellowText.style.fontSize = fontSize;
+}

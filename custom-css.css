@@ -506,3 +506,21 @@ body.dark-mode {
   transform: translateX(-20px) translateY(-2px) rotate(-90deg);
   float: left;
 }
+
+.contact-us {
+  background-color: rgb(39, 39, 39);
+  min-height: 200px;
+  width: 100%;
+}
+
+.text-contact-normal {
+  font-size: 28px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.text-contact-yellow {
+  font-size: 28px;
+  color: var(--color-gold);
+  transition: all 0.2s;
+}
