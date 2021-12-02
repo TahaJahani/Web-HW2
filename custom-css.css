@@ -13,8 +13,17 @@
   --color-blue: rgba(102, 127, 254, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .white-text {
   color: #fff !important;
+}
+
+body.dark-mode {
+  background-color: #000 !important;
+  color: white !important;
 }
 
 .curve {
