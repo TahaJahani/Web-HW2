@@ -500,3 +500,9 @@ body.dark-mode {
   from {right: 30px; opacity: 1;}
   to {right: -30px; opacity: 0;}
 }
+
+
+.badge {
+  transform: translateX(-20px) translateY(-2px) rotate(-90deg);
+  float: left;
+}
