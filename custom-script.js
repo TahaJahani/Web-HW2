@@ -3,6 +3,11 @@ function toggleDarkMode() {
   element.classList.toggle("dark-mode");
 }
 
+function toggleCoverCardInGallery(coverCardID) {
+    let element = document.getElementById(coverCardID);
+    element.classList.toggle("clickable-pic-hover");
+}
+
 function randomGradient() {
     let gradient = document.querySelector("#mask");
 
