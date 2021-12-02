@@ -26,6 +26,17 @@ body.dark-mode {
   color: white !important;
 }
 
+.nav-icon {
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background-color: orange !important;
+  color: white !important;
+  border-radius: 50% !important;
+  padding: 0.5rem !important;
+  cursor: pointer;
+}
+
 .curve {
   position: absolute;
   height: 250px;
