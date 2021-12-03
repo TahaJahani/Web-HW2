@@ -197,9 +197,9 @@ body.dark-mode {
 }
 
 .wave-shape {
-  clip-path: path(
-    "M-0.1,0.7l0,376.4c0,0,27.1-14.9,134.1,9.8c0,0,111.6,27,230.2,4.2c0,0,124.9-19.5,135.2-11.2l0.2-379.5"
-  );
+  width: 100%;
+  clip-path: url(#wave-mask);
+  -webkit-clip-path: url(#wave-mask);
 }
 
 .bg-pink {
