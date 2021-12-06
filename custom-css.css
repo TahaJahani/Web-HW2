@@ -430,7 +430,15 @@ body.dark-mode {
   display: block;
 }
 
+.quote-icon {
+  display: none;
+}
+
 @media (min-width: 600px) {
+  .quote-icon {
+    display: block;
+  }
+
   .only-for-big {
     display: block;
   }
