@@ -438,12 +438,34 @@ body.dark-mode {
   display: none;
 }
 
+.hidden-on-mobile {
+  display: none;
+}
+
+.centered {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 @media (min-width: 600px) {
   .quote-icon {
     display: block;
   }
 
+  .centered {
+    display: block;
+    text-align: right;
+  }
+
   #svg {
+    display: block;
+  }
+
+  .hidden-on-mobile {
     display: block;
   }
 
