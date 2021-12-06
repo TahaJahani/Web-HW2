@@ -451,10 +451,37 @@ body.dark-mode {
   align-content: center;
 }
 
+.flex-column-on-mobile {
+  flex-direction: column;
+}
+
+.flex-row-on-mobile {
+  display: flex;
+  flex-direction: row;
+}
+
+.each-social-icon {
+  margin-right: 1rem;
+}
+
 @media (min-width: 600px) {
   .quote-icon {
     display: block;
   }
+
+  .flex-column-on-mobile {
+    flex-direction: row;
+  }
+
+  .each-social-icon {
+    margin-right: 0rem;
+  }
+
+  .flex-row-on-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  
 
   .centered {
     display: block;
