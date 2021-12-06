@@ -434,8 +434,16 @@ body.dark-mode {
   display: none;
 }
 
+#svg {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .quote-icon {
+    display: block;
+  }
+
+  #svg {
     display: block;
   }
 
