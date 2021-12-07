@@ -159,6 +159,32 @@ body.dark-mode {
   height: auto;
 }
 
+.navbar-small-screen {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar-large-screen {
+    display: none;
+  }
+
+  .navbar-small-screen {
+    display: block;
+  }
+  .navbar-brand-image {
+    width: 50px;
+  }
+
+  .navbar-brand {
+    height: 25px;
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .adjust-padding {
   padding: 0.5rem !important;
 }
@@ -181,10 +207,6 @@ body.dark-mode {
 .important-badge {
   width: 20% !important;
   transform: rotate(90deg) !important;
-}
-
-.navbar-brand {
-  height: 50px;
 }
 
 .hoverable-card {
@@ -465,6 +487,10 @@ body.dark-mode {
 }
 
 @media (min-width: 600px) {
+  .navbar-brand {
+    height: 50px;
+  }
+
   .quote-icon {
     display: block;
   }
@@ -630,4 +656,43 @@ body.dark-mode {
 .contact-us-logo:hover {
   filter: invert(92%) sepia(57%) saturate(4396%) hue-rotate(324deg) brightness(95%) contrast(107%);
   transform: scale(1.1);
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  z-index: 5;
+}
+
+.overlay-shadow {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  margin: 0;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }

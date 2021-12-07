@@ -15,12 +15,13 @@
 </head>
 
 <body dir="rtl">
-  <nav dir="ltr" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav dir="ltr" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-large-screen">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleDarkMode()">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        onclick="toggleDarkMode()">
         <i class="fas fa-bars" onclick="toggleDarkMode()"></i>
       </button>
 
@@ -64,6 +65,43 @@
     <!-- Container wrapper -->
   </nav>
 
+  <!-- Side Nav For Mobile -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="nav-link" href="#headeranchor" onclick="closeNav()">معرفی</a>
+    <a class="nav-link" href="#teamanchor" onclick="closeNav()">اعضای تیم</a>
+    <a class="nav-link" href="#galleryanchor" onclick="closeNav()">گالری</a>
+    <a class="nav-link" href="#activities" onclick="closeNav()">فعالیت‌ها</a>
+    <a class="nav-link" href="#newsletteranchor" onclick="closeNav()">خبرنامه</a>
+  </div>
+  <!-- End Of Side Nav For Mobile-->
+
+  <!-- Nav for Mobile-->
+  <nav dir="ltr" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-small-screen">
+    <!-- Container wrapper -->
+    <div class="container-fluid d-flex justify-content-between">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation" onclick="openNav()">
+        <i class="fas fa-bars" onclick="openNav()"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="d-flex align-items-center">
+        <!-- Collapsible wrapper -->
+        <div class="navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="#">
+            <img class="navbar-brand-image" src="files/blue_logo_200x200.png" alt="" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- End Nav For Mobile-->
+  <div class="overlay-shadow" id="overlay" onclick="closeNav()"></div>
+
 
 
   <section id="headeranchor" class="headersection">
@@ -73,7 +111,7 @@
         <svg width="0" height="0" id="svg">
           <defs>
             <clipPath id="wave-mask" clipPathUnits="objectBoundingBox">
-              <path d="M0,0h1v0.9c0,0-0.08-0.04-0.25,0.04c0,0-0.24,0.12-0.44,0c0,0-0.19-0.1-0.35 0V1z"/>
+              <path d="M0,0h1v0.9c0,0-0.08-0.04-0.25,0.04c0,0-0.24,0.12-0.44,0c0,0-0.19-0.1-0.35 0V1z" />
             </clipPath>
           </defs>
         </svg>
@@ -92,7 +130,8 @@
                     <h4 class="header-bottom-header">گروهی پر از امید و آرزو در راه کسب علم و ثروت ناشی از فعالیت در درس
                       برنامه‌سازی وب دانشگاه صنعتی شریف</h4>
                     <br>
-                    <a class="btn btn-warning btn-rounded a-bit-larger" role="button" onclick="randomGradient()">آشنایی بیش‌تر</a>
+                    <a class="btn btn-warning btn-rounded a-bit-larger" role="button" onclick="randomGradient()">آشنایی
+                      بیش‌تر</a>
                   </div>
                 </div>
 
@@ -140,7 +179,8 @@
               مهندسی نرم‌افزار
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger" onclick="window.location.href = 'https://github.com/TahaJahani';">اطلاعات
+          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger"
+            onclick="window.location.href = 'https://github.com/TahaJahani';">اطلاعات
             بیش‌تر</button>
         </div>
       </div>
@@ -172,7 +212,8 @@
               مهندسی نرم‌افزار
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger" onclick="window.location.href = 'https://spneshaei.com';">اطلاعات
+          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger"
+            onclick="window.location.href = 'https://spneshaei.com';">اطلاعات
             بیش‌تر</button>
         </div>
       </div>
@@ -203,7 +244,8 @@
               مهندسی نرم‌افزار
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger" onclick="window.location.href = 'https://twitter.com/mhgheisarieh?lang=bn';">اطلاعات
+          <button type="button" class="btn btn-outline-warning border-gold btn-rounded full-width a-bit-larger"
+            onclick="window.location.href = 'https://twitter.com/mhgheisarieh?lang=bn';">اطلاعات
             بیش‌تر</button>
         </div>
       </div>
@@ -216,7 +258,7 @@
 
           <div>
             <div class="image fill">
-                <img src="img/pic7.jpg" class="inside-img" />
+              <img src="img/pic7.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -224,8 +266,8 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
       </div>
       <div class="row">
@@ -233,7 +275,7 @@
 
           <div>
             <div class="image fill">
-                <img src="img/pic1.jpg" class="inside-img" />
+              <img src="img/pic1.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -241,14 +283,14 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
         <div class="col-md-6 hoverable-pic">
 
           <div>
             <div class="image fill">
-                <img src="img/pic3.jpg" class="inside-img" />
+              <img src="img/pic3.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -256,8 +298,8 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
       </div>
       <div class="row">
@@ -265,7 +307,7 @@
 
           <div>
             <div class="image fill">
-                <img src="img/pic4.jpg" class="inside-img" />
+              <img src="img/pic4.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -273,15 +315,15 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
 
         <div class="col-md-4 hoverable-pic">
 
           <div>
             <div class="image fill">
-                <img src="img/pic5.jpg" class="inside-img" />
+              <img src="img/pic5.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -289,15 +331,15 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
 
         <div class="col-md-4 hoverable-pic">
 
           <div>
             <div class="image fill">
-                <img src="img/pic6.jpg" class="inside-img" />
+              <img src="img/pic6.jpg" class="inside-img" />
             </div>
             <div class="content">
               <div class="hover-text-content">
@@ -305,8 +347,8 @@
                 <div class="hover-text-content-inner">This is a short description</div>
               </div>
             </div>
-        </div>
-        
+          </div>
+
         </div>
       </div>
     </div>
@@ -315,11 +357,11 @@
     <div id="carouselGalleryInterval" class="carousel slide mt-5 gallery-small" data-mdb-ride="carousel">
       <div class="carousel-inner">
         <center>
-        <div class="carousel-item active" data-mdb-interval="2000">
+          <div class="carousel-item active" data-mdb-interval="2000">
             <div class="clickable-pic" id="covercard0" onclick="toggleCoverCardInGallery('covercard0')">
               <div>
                 <div class="image fill">
-                    <img src="img/pic1.jpg" width="300px" height="320px" class="img-fluid rounded-start" />
+                  <img src="img/pic1.jpg" width="300px" height="320px" class="img-fluid rounded-start" />
                 </div>
                 <center>
                   <div class="content" width="300px" height="320px">
@@ -328,82 +370,82 @@
                       <div class="hover-text-content-inner">This is a short description</div>
                     </div>
                   </div>
-                </center> 
+                </center>
+              </div>
             </div>
-            </div>
-        </div> <!-- Carousel Item End -->
-        
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard2" onclick="toggleCoverCardInGallery('covercard2')">
-            <div>
-              <div class="image fill">
+          </div> <!-- Carousel Item End -->
+
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard2" onclick="toggleCoverCardInGallery('covercard2')">
+              <div>
+                <div class="image fill">
                   <img src="img/pic2.jpeg" width="300px" height="320px" class="img-fluid rounded-start" />
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
 
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard4" onclick="toggleCoverCardInGallery('covercard4')">
-            <div>
-              <div class="image fill">
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard4" onclick="toggleCoverCardInGallery('covercard4')">
+              <div>
+                <div class="image fill">
                   <img src="img/pic4.jpg" width="300px" height="320px" class="img-fluid rounded-start" />
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
 
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard5" onclick="toggleCoverCardInGallery('covercard5')">
-            <div>
-              <div class="image fill">
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard5" onclick="toggleCoverCardInGallery('covercard5')">
+              <div>
+                <div class="image fill">
                   <img src="img/pic5.jpg" width="300px" height="320px" class="img-fluid rounded-start" />
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
 
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard6" onclick="toggleCoverCardInGallery('covercard6')">
-            <div>
-              <div class="image fill">
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard6" onclick="toggleCoverCardInGallery('covercard6')">
+              <div>
+                <div class="image fill">
                   <img src="img/pic6.jpg" width="300px" height="320px" class="img-fluid rounded-start" />
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
 
         </center>
       </div>
@@ -417,137 +459,162 @@
       </button>
     </div>
 
-  <!--End Of Gallery Small-->
-  <div id="activities"></div>
+    <!--End Of Gallery Small-->
+    <div id="activities"></div>
 
-  <!--Activities for small screens -->
+    <!--Activities for small screens -->
 
-  <div class="container only-for-small">
-    <h3>لورم ایپسوم</h3>
-    <p style="text-align: justify;">
-      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.          </p>
-    <!--MDBootStrap image carousel-->
-    <div id="carouselGalleryInterval3" class="carousel slide" data-ride="carousel" data-interval="2000">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard7" onclick="toggleCoverCardInGallery('covercard7')">
-            <div>
-              <div class="image fill">
-                  <img src="img/pic8.jpg" width="300px" height="300px" class="img-fluid rounded-start" style="width: 300px; height: 300px; object-fit: fill;"/>
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
+    <div class="container only-for-small">
+      <h3>لورم ایپسوم</h3>
+      <p style="text-align: justify;">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+        هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+        متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
+        سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+        طراحی اساسا مورد استفاده قرار گیرد. </p>
+      <!--MDBootStrap image carousel-->
+      <div id="carouselGalleryInterval3" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard7" onclick="toggleCoverCardInGallery('covercard7')">
+              <div>
+                <div class="image fill">
+                  <img src="img/pic8.jpg" width="300px" height="300px" class="img-fluid rounded-start"
+                    style="width: 300px; height: 300px; object-fit: fill;" />
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
-
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard8" onclick="toggleCoverCardInGallery('covercard8')">
-            <div>
-              <div class="image fill">
-                  <img src="img/pic9.jpg" width="300px" height="300px" class="img-fluid rounded-start" style="width: 300px; height: 300px; object-fit: fill;"/>
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
                   </div>
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
+
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard8" onclick="toggleCoverCardInGallery('covercard8')">
+              <div>
+                <div class="image fill">
+                  <img src="img/pic9.jpg" width="300px" height="300px" class="img-fluid rounded-start"
+                    style="width: 300px; height: 300px; object-fit: fill;" />
                 </div>
-              </center> 
-          </div>
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-    
- 
 
-  
-    <button class="carousel-control-prev" data-mdb-target="#carouselGalleryInterval3" type="button"
-    data-mdb-slide="prev">
-    <span class="nav-icon">&gt;</span>
-  </button>
-  <button class="carousel-control-next" data-mdb-target="#carouselGalleryInterval3" type="button"
-    data-mdb-slide="next">
-    <span class="nav-icon">&lt;</span>
-  </button>
-    </div>
-    <div style="margin-top: 1rem; margin-bottom: 2.5rem;">
-      <a href="http://spneshaei.com" style="color: red; ">اطلاعات بیشتر <i class="fa fa-arrow-left" style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
-    </div>
 
-    <h3>لورم ایپسوم</h3>
-    <p style="text-align: justify;">
-      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.          </p>
-    <!--MDBootStrap image carousel-->
-    <div id="carouselGalleryInterval4" class="carousel slide" data-ride="carousel" data-interval="2000">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard9" onclick="toggleCoverCardInGallery('covercard9')">
-            <div>
-              <div class="image fill">
-                  <img src="img/pic8.jpg" width="300px" height="300px" class="img-fluid rounded-start" style="width: 300px; height: 300px; object-fit: fill;"/>
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
-                  </div>
+
+
+        <button class="carousel-control-prev" data-mdb-target="#carouselGalleryInterval3" type="button"
+          data-mdb-slide="prev">
+          <span class="nav-icon">&gt;</span>
+        </button>
+        <button class="carousel-control-next" data-mdb-target="#carouselGalleryInterval3" type="button"
+          data-mdb-slide="next">
+          <span class="nav-icon">&lt;</span>
+        </button>
+      </div>
+      <div style="margin-top: 1rem; margin-bottom: 2.5rem;">
+        <a href="http://spneshaei.com" style="color: red; ">اطلاعات بیشتر <i class="fa fa-arrow-left"
+            style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
+      </div>
+
+      <h3>لورم ایپسوم</h3>
+      <p style="text-align: justify;">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با
+        هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و
+        متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+        پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط
+        سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود
+        طراحی اساسا مورد استفاده قرار گیرد. </p>
+      <!--MDBootStrap image carousel-->
+      <div id="carouselGalleryInterval4" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard9" onclick="toggleCoverCardInGallery('covercard9')">
+              <div>
+                <div class="image fill">
+                  <img src="img/pic8.jpg" width="300px" height="300px" class="img-fluid rounded-start"
+                    style="width: 300px; height: 300px; object-fit: fill;" />
                 </div>
-              </center> 
-          </div>
-          </div>
-        </div> <!-- Carousel Item End -->
-
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="clickable-pic" id="covercard10" onclick="toggleCoverCardInGallery('covercard10')">
-            <div>
-              <div class="image fill">
-                  <img src="img/pic9.jpg" width="300px" height="300px" class="img-fluid rounded-start" style="width: 300px; height: 300px; object-fit: fill;"/>
-              </div>
-              <center>
-                <div class="content" width="300px" height="320px">
-                  <div class="hover-text-content-no-margin">
-                    <div class="hover-text-content-header">THIS IS A TITLE</div>
-                    <div class="hover-text-content-inner">This is a short description</div>
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
                   </div>
-                </div>
-              </center> 
-          </div>
-          </div>
-        </div>
-        </div>
-    
- 
+                </center>
+              </div>
+            </div>
+          </div> <!-- Carousel Item End -->
 
-  
-    <button class="carousel-control-prev" data-mdb-target="#carouselGalleryInterval4" type="button"
-    data-mdb-slide="prev">
-    <span class="nav-icon">&gt;</span>
-  </button>
-  <button class="carousel-control-next" data-mdb-target="#carouselGalleryInterval4" type="button"
-    data-mdb-slide="next">
-    <span class="nav-icon">&lt;</span>
-  </button>
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="clickable-pic" id="covercard10" onclick="toggleCoverCardInGallery('covercard10')">
+              <div>
+                <div class="image fill">
+                  <img src="img/pic9.jpg" width="300px" height="300px" class="img-fluid rounded-start"
+                    style="width: 300px; height: 300px; object-fit: fill;" />
+                </div>
+                <center>
+                  <div class="content" width="300px" height="320px">
+                    <div class="hover-text-content-no-margin">
+                      <div class="hover-text-content-header">THIS IS A TITLE</div>
+                      <div class="hover-text-content-inner">This is a short description</div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <button class="carousel-control-prev" data-mdb-target="#carouselGalleryInterval4" type="button"
+          data-mdb-slide="prev">
+          <span class="nav-icon">&gt;</span>
+        </button>
+        <button class="carousel-control-next" data-mdb-target="#carouselGalleryInterval4" type="button"
+          data-mdb-slide="next">
+          <span class="nav-icon">&lt;</span>
+        </button>
+      </div>
+      <div style="margin-top: 1rem;">
+        <a href="http://spneshaei.com" style="color: red; ">اطلاعات بیشتر <i class="fa fa-arrow-left"
+            style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
+      </div>
     </div>
-    <div style="margin-top: 1rem;">
-      <a href="http://spneshaei.com" style="color: red; ">اطلاعات بیشتر <i class="fa fa-arrow-left" style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
-    </div>
-  </div>
     <div class="container only-for-big">
       <div class="d-flex">
         <span style="width: 100%;" class="m-4 ten-percent-padding-left-in-big">
           <h3>لورم ایپسوم</h3>
           <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.          </p>
-            <a href="http://spneshaei.com" style="color: red;">اطلاعات بیشتر <i class="fa fa-arrow-left" style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه
+            و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
+            دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. </p>
+          <a href="http://spneshaei.com" style="color: red;">اطلاعات بیشتر <i class="fa fa-arrow-left"
+              style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
         </span>
         <span style="width: fit-content; height: fit-content; margin-left: 100px;">
           <div class="stack-image hover-shadow">
@@ -571,22 +638,32 @@
         <span style="width: 100%;" class="m-4 five-percent-padding-right-in-big">
           <h3>لورم ایپسوم</h3>
           <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.          </p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع
+            با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه
+            و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و
+            فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها،
+            و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
+            دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. </p>
           </p>
-          <a href="http://spneshaei.com" style="color: red;">اطلاعات بیشتر <i class="fa fa-arrow-left" style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
+          <a href="http://spneshaei.com" style="color: red;">اطلاعات بیشتر <i class="fa fa-arrow-left"
+              style="font-size: 70% !important; margin-right: 0.25% !important;"></i></a>
         </span>
       </div>
 
 
-      
+
     </div>
 
 
     <div class="contact-us d-flex justify-content-center align-items-center flex-column-on-mobile">
       <div class="col-1 ms-5 flex-row-on-mobile">
-        <div class="mb-3 d-flex justify-content-end each-social-icon"><img src="./files/telegram.svg" class="contact-us-logo"/></div>
-        <div class="mb-3 d-flex justify-content-end each-social-icon"><img src="./files/instagram.svg" class="contact-us-logo"/></div>
-        <div class="d-flex justify-content-end each-social-icon"><img src="./files/whatsapp.svg" class="contact-us-logo"/></div>
+        <div class="mb-3 d-flex justify-content-end each-social-icon"><img src="./files/telegram.svg"
+            class="contact-us-logo" /></div>
+        <div class="mb-3 d-flex justify-content-end each-social-icon"><img src="./files/instagram.svg"
+            class="contact-us-logo" /></div>
+        <div class="d-flex justify-content-end each-social-icon"><img src="./files/whatsapp.svg"
+            class="contact-us-logo" /></div>
       </div>
       <div onmouseover="contactUsMouseMethod(event)" onmouseout="contactUsMouseMethod(event)" class="col-3 me-5">
         <div class="text-contact-normal">با ما</div>
@@ -603,75 +680,72 @@
     <div id="carouselExampleInterval" class="carousel slide mt-5" data-mdb-ride="carousel">
       <div class="carousel-inner">
         <center>
-        <div class="carousel-item active" data-mdb-interval="2000">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0 padding-holder">
-              <div class="col-md-4">
-                <div class="image-comment-container">
-                  <img src="img/monterey.png"
-                    width="300px"
-                    height="300px"
-                    class="img-fluid rounded-start" />
+          <div class="carousel-item active" data-mdb-interval="2000">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 padding-holder">
+                <div class="col-md-4">
+                  <div class="image-comment-container">
+                    <img src="img/monterey.png" width="300px" height="300px" class="img-fluid rounded-start" />
 
                     <span class="quote-icon"><i class="fas fa-quote-left quote-icon"></i></span>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-8">
-                <div class="my-card-body">
-                  <p style="text-align: right;">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد یک                  </p>
+                <div class="col-md-8">
+                  <div class="my-card-body">
+                    <p style="text-align: right;">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد یک </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0 padding-holder">
-              <div class="col-md-4">
-                <div class="image-comment-container">
-                  <img src="img/monterey.png"
-                    width="300px"
-                    height="300px"
-                    class="img-fluid rounded-start" />
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 padding-holder">
+                <div class="col-md-4">
+                  <div class="image-comment-container">
+                    <img src="img/monterey.png" width="300px" height="300px" class="img-fluid rounded-start" />
 
                     <span class="quote-icon"><i class="fas fa-quote-left quote-icon"></i></span>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-8">
-                <div class="my-card-body">
-                  <p style="text-align: right;">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد دو                  </p>
+                <div class="col-md-8">
+                  <div class="my-card-body">
+                    <p style="text-align: right;">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد دو </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="carousel-item" data-mdb-interval="2000">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0 padding-holder">
-              <div class="col-md-4">
-                <div class="image-comment-container">
-                  <img src="img/monterey.png"
-                    width="300px"
-                    height="300px"
-                    class="img-fluid rounded-start" />
+          <div class="carousel-item" data-mdb-interval="2000">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0 padding-holder">
+                <div class="col-md-4">
+                  <div class="image-comment-container">
+                    <img src="img/monterey.png" width="300px" height="300px" class="img-fluid rounded-start" />
 
                     <span class="quote-icon"><i class="fas fa-quote-left quote-icon"></i></span>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-8">
-                <div class="my-card-body">
-                  <p style="text-align: right;">
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد سه                  </p>
+                <div class="col-md-8">
+                  <div class="my-card-body">
+                    <p style="text-align: right;">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                      چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                      نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد سه </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </center>
+        </center>
       </div>
       <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button"
         data-mdb-slide="prev">
@@ -683,22 +757,24 @@
       </button>
     </div>
   </div>
-  <div id="newsletteranchor" dir="ltr" class="row d-flex justify-content-center" style="position: relative; top: 100px; ">
+  <div id="newsletteranchor" dir="ltr" class="row d-flex justify-content-center"
+    style="position: relative; top: 100px; ">
     <div style="width: 60%; border-radius: 4px;" class="bg-navy-blue p-4">
       <h3 class="mb-4" style="width: 100%; text-align: end;">خبرنامه</h3>
       <form class="d-flex mb-3 justify-content-center newsletter-flex" style="width: 100%;">
         <div class="form-outline form-white col mx-4">
-          <input type="text" id="typeText" class="form-control newsletter-input" placeholder="نام"/>
+          <input type="text" id="typeText" class="form-control newsletter-input" placeholder="نام" />
         </div>
         <div class="form-outline form-white col mx-4">
-          <input type="text" id="typeText" class="form-control newsletter-input" placeholder="نام خانوادگی"/>
+          <input type="text" id="typeText" class="form-control newsletter-input" placeholder="نام خانوادگی" />
         </div>
         <div class="form-outline form-white col mx-4">
-          <input type="email" id="typeEmail" class="form-control newsletter-input" placeholder="ایمیل"/>
+          <input type="email" id="typeEmail" class="form-control newsletter-input" placeholder="ایمیل" />
         </div>
         <div class="form-outline form-white col mx-4">
           <center>
-            <input type="button" id="typeSubmit" class="btn submit-newsletter-button" value="ثبت" data-mdb-toggle="modal" data-mdb-target="#submitNewsletterModal"/>
+            <input type="button" id="typeSubmit" class="btn submit-newsletter-button" value="ثبت"
+              data-mdb-toggle="modal" data-mdb-target="#submitNewsletterModal" />
           </center>
         </div>
       </form>
@@ -710,17 +786,14 @@
     </div>
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05); font-family: 'Helvetica Neue',sans-serif;">
       Copyright © 2021
-      <a style="font-family: 'Helvetica Neue',sans-serif;" href="https://github.com/TahaJahani">Wababil</a> &nbsp;&nbsp; | &nbsp;&nbsp; Design by <a style="font-family: 'Helvetica Neue',sans-serif;" href="https://github.com/TahaJahani">Wababil Team</a>
+      <a style="font-family: 'Helvetica Neue',sans-serif;" href="https://github.com/TahaJahani">Wababil</a> &nbsp;&nbsp;
+      | &nbsp;&nbsp; Design by <a style="font-family: 'Helvetica Neue',sans-serif;"
+        href="https://github.com/TahaJahani">Wababil Team</a>
     </div>
   </footer>
-  <div id="toast"><i class="fas fa-check"></i>   عملیات موفقیت آمیز بود</div>
-  <div
-  class="modal fade"
-  id="submitNewsletterModal"
-  tabindex="-1"
-  aria-labelledby="submitNewsletterModalLabel"
-  aria-hidden="true"
-  >
+  <div id="toast"><i class="fas fa-check"></i> عملیات موفقیت آمیز بود</div>
+  <div class="modal fade" id="submitNewsletterModal" tabindex="-1" aria-labelledby="submitNewsletterModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -731,7 +804,8 @@
           <button type="button" class="btn" data-mdb-dismiss="modal" style="font-size: 1rem;">
             خیر
           </button>
-          <button type="button" class="btn" data-mdb-dismiss="modal" style="background-color: orange; font-size: 1rem;" onclick="showToast()">بله</button>
+          <button type="button" class="btn" data-mdb-dismiss="modal" style="background-color: orange; font-size: 1rem;"
+            onclick="showToast()">بله</button>
         </div>
       </div>
     </div>
