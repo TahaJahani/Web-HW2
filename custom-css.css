@@ -619,7 +619,8 @@ body.dark-mode {
 
 
 .badge {
-  transform: translateX(-20px) translateY(-2px) rotate(-90deg);
+  transform: translateX(-20px) translateY(-7px) rotate(-90deg);
+  border-radius: 0 !important;
   float: left;
 }
 
