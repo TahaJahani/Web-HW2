@@ -15,7 +15,7 @@
 </head>
 
 <body dir="rtl">
-  <nav dir="ltr" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-large-screen">
+  <nav dir="ltr" class="navbar navbar-expand navbar-dark bg-dark sticky-top navbar-large-screen">
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Toggle button -->
@@ -68,11 +68,17 @@
   <!-- Side Nav For Mobile -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a class="nav-link" href="#headeranchor" onclick="closeNav()">معرفی</a>
-    <a class="nav-link" href="#teamanchor" onclick="closeNav()">اعضای تیم</a>
-    <a class="nav-link" href="#galleryanchor" onclick="closeNav()">گالری</a>
-    <a class="nav-link" href="#activities" onclick="closeNav()">فعالیت‌ها</a>
-    <a class="nav-link" href="#newsletteranchor" onclick="closeNav()">خبرنامه</a>
+    <a>
+      <div class="form-check form-switch fs-6" onclick="toggleDarkMode()">
+        <input class="form-check-input fs-6" type="checkbox" id="flexSwitchCheckDefault" />
+        <label class="form-check-label white-text fs-6" for="flexSwitchCheckDefault">حالت تاریک</label>
+      </div>
+    </a>
+    <a class="nav-link fs-6" href="#headeranchor" onclick="closeNav()">معرفی</a>
+    <a class="nav-link fs-6" href="#teamanchor" onclick="closeNav()">اعضای تیم</a>
+    <a class="nav-link fs-6" href="#galleryanchor" onclick="closeNav()">گالری</a>
+    <a class="nav-link fs-6" href="#activities" onclick="closeNav()">فعالیت‌ها</a>
+    <a class="nav-link fs-6" href="#newsletteranchor" onclick="closeNav()">خبرنامه</a>
   </div>
   <!-- End Of Side Nav For Mobile-->
 
